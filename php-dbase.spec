@@ -6,8 +6,8 @@
 Summary:	dBase database file access functions
 Name:		php-%{modname}
 Epoch:		1
-Version:	5.0.1
-Release:	%mkrel 5
+Version:	5.1.0
+Release:	%mkrel 1
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/dbase
