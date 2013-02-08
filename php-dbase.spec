@@ -7,17 +7,17 @@ Summary:	dBase database file access functions
 Name:		php-%{modname}
 Epoch:		1
 Version:	5.1.0
-Release:	%mkrel 1
+Release:	2
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/dbase
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
 Source1:	dbase.ini
 BuildRequires:	php-devel >= 3:5.3.0
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
-These functions allow you to access records stored in dBase-format (dbf) databases.
+These functions allow you to access records stored in dBase-format (dbf)
+databases.
 
 %prep
 
@@ -34,8 +34,6 @@ phpize
 mv modules/*.so .
 
 %install
-rm -rf %{buildroot} 
-
 install -d %{buildroot}%{_libdir}/php/extensions
 install -d %{buildroot}%{_sysconfdir}/php.d
 
