@@ -13,6 +13,11 @@ License:	PHP License
 URL:		https://pecl.php.net/package/dbase
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
 Source1:	dbase.ini
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	php-devel >= 3:5.3.0
 
 %description
